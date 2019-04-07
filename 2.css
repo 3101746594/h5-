@@ -1,0 +1,96 @@
+*{
+	margin:0;
+	padding:0;
+}
+.modal-dialog {
+    width: 416px;
+    height: 480px;
+    margin: 100px auto;
+    border:1px solid #a5a1a1;
+}
+.modal-content {
+    width: 416px;
+    height: 386px;
+}
+.modal-header{
+	min-height: 16.43px;
+    padding: 15px;
+}
+.dd_close {
+    width: 17px;
+    height: 17px;
+    border: none;
+    background: transparent;
+    float: right;
+    font-size: 20px;
+    color: #e5e5e5;
+}
+.modal-body {
+    position: relative;
+    padding: 15px;
+}
+.dd_logo {
+    width: 56px;
+    margin: 0 auto;
+    display: block;
+}
+.dd_login_word {
+    margin-top: 30px;
+    margin-bottom: 31px;
+    font-size: 20px;
+    color: #00a1e8;
+    text-align: center;
+}
+.login_wrap{
+	width: 262px;
+	margin:0 auto;
+}
+.user_intro {
+    padding-bottom: 19px;
+}
+#username{
+    width: 260px;
+    height: 32px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+    text-indent: 10px;
+}
+#password{
+    width: 260px;
+    height: 32px;
+    border: 1px solid #e5e5e5;
+    text-indent: 10px;
+}
+.rember_me {
+    float: left;
+}
+#cked {
+    margin: 0;
+    position: relative;
+    top: 0;
+}
+.rember_me label {
+    font-size: 13px;
+}
+.dd_re_me {
+    font-size: 13px;
+    color: #00a1e8;
+    cursor: pointer;
+    line-height: 100%!important;
+    float: right;
+}
+#submit {
+    width: 260px;
+    height: 32px;
+    margin-top: 21px;
+    background: #00a1e8;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 13px;
+    text-align:center;
+}
+#error_message{
+	float: left;
+	margin-top:41px;
+}

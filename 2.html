@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="2.css">
+</head>
+<body>
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="dd_close">X</button>
+			</div>
+			<div class="modal-body">
+				<img src="img/4.png" alt="" class="dd_logo">
+				<div class="dd_login_word">用户登录</div>
+			</div>
+			<div class="login_wrap">
+				<div class="user_intro">
+					<input type="text" placeholder="请输入用户名/邮箱地址" id="username" >
+					<input type="password" id="password"
+					placeholder="请输入密码">
+				</div>
+				<div>
+					<div class="rember_me">
+						<input type="checkbox" checked id="cked">
+						<label for="cked">记住我</label>
+					</div>
+					<div class="dd_re_me">忘记密码?</div>
+				</div>
+				<div id="error_message" style="color:red;"></div>
+				<div><input type="submit" value="登录" id="submit"></div>
+				
+			</div>
+		</div>
+	</div>
+	<script>
+		function $(id){
+           	return document.getElementById(id);
+	    }
+	    var username=$('username');
+	    var password=$('password');
+	    var error_message=$('error_message');
+	    var submit=$('submit');
+	    console.log(submit);
+	    submit.onclick=function(){
+	    	if(username.value==""){
+	    		error_message.innerHTML='请输入用户名';
+				return;
+			}else if (password.value== "") {
+				error_message.innerHTML="密码不能为空";
+				return;
+			}else{
+				location.href="../wangye/2.php";
+			}	
+		}
+	</script>
+</body>
+</html>
